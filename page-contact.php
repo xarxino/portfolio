@@ -10,7 +10,7 @@ get_template_part('template-parts/header', 'header'); ?>
     <div class="flex flex-col gap-8 md:gap-12 lg:gap-16 xl:gap-24">
         <div class="flex flex-col gap-4 md:gap-6 lg:gap-8 xl:gap-12">
             <h1>Let's bring your vision to life</h1>
-            <p class="text-3xl leading-normal">Are you ready to collaborate and bring your ideas to life? Simply book a call and let's get the ball rolling.</p>
+            <p class="lg:text-3xl leading-normal">Are you ready to collaborate and bring your ideas to life? Simply book a call and let's get the ball rolling.</p>
         </div>
         <?php the_content(); ?>
     </div>
