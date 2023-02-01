@@ -1,6 +1,8 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 
+<?php $meta_desc = "Hey there! I'm a freelance UI designer ready to add some pizzazz to your digital world. I specialize in creating user-friendly and visually appealing designs that not only look good, but solve real problems for your users. Whether you need a website, app, or any other digital product, I've got you covered. Let's chat and see how I can bring your ideas to life and give your users the seamless experience they deserve." ?>
+
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,21 +10,21 @@
 	<!-- Primary Meta Tags -->
 	<title><?php echo get_bloginfo('name') . ' - ' . get_bloginfo('description'); ?></title>
 	<meta name="title" content="<?php echo get_bloginfo('name') . ' - ' . get_bloginfo('description'); ?>">
-	<meta name="description" content="Come check out my design world! As a freelance UI designer, I, Tom Graafmans, am thrilled to showcase my portfolio filled with eye-catching projects. Want to stay on top of UI trends? Take a look at my blog! And don't hesitate to reach out for your next design project - let's make it happen together.">
+	<meta name="description" content="<?php echo $meta_desc; ?>">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://tomgraafmans.com/">
+	<meta property="og:url" content="<?php bloginfo('url') ?>">
 	<meta property="og:title" content="<?php echo get_bloginfo('name') . ' - ' . get_bloginfo('description'); ?>">
-	<meta property="og:description" content="Come check out my design world! As a freelance UI designer, I, Tom Graafmans, am thrilled to showcase my portfolio filled with eye-catching projects. Want to stay on top of UI trends? Take a look at my blog! And don't hesitate to reach out for your next design project - let's make it happen together.">
-	<meta property="og:image" content="">
+	<meta property="og:description" content="<?php echo $meta_desc; ?>">
+	<meta property="og:image" content="<?php echo get_theme_root_uri('screenshot.png') ?>">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:url" content="https://tomgraafmans.com/">
+	<meta property="twitter:url" content="<?php bloginfo('url') ?>">
 	<meta property="twitter:title" content="<?php echo get_bloginfo('name') . ' - ' . get_bloginfo('description'); ?>">
-	<meta property="twitter:description" content="Come check out my design world! As a freelance UI design er, I, Tom Graafmans, am thrilled to showcase my portfolio filled with eye-catching projects. Want to stay on top of UI trends? Take a look at my blog! And don't hesitate to reach out for your next design project - let's make it happen together.">
-	<meta property="twitter:image" content="">
+	<meta property="twitter:description" content="<?php echo $meta_desc; ?>">
+	<meta property="twitter:image" content="<?php echo get_theme_root_uri('screenshot.png') ?>">
 	<?php wp_head(); ?>
 </head>
 
