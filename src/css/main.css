@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;500;700;900&family=Mada:wght@300;400;500;600;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		@apply scroll-smooth;
+	}
+	body {
+		@apply after:bg-noise after:fixed after:inset-0 after:opacity-5 after:-z-10 relative z-10 font-body font-light text-2xl text-primary dark:text-slate-50 bg-slate-50 dark:bg-primary flex flex-col gap-12 md:gap-16 lg:gap-24 xl:gap-32;
+	}
+
+	header {
+		@apply container max-w-7xl pt-6 md:pt-8 lg:pt-12 xl:pt-16 w-[90%] lg:w-[80%] 2xl:w-[70%] mx-auto flex flex-col justify-between;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-display font-light leading-none tracking-tighter;
+	}
+
+	h1 {
+		@apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
+	}
+
+	h2 {
+		@apply text-3xl md:text-4xl lg:text-6xl xl:text-6xl;
+	}
+
+	h3 {
+		@apply text-2xl md:text-3xl lg:text-6xl xl:text-5xl leading-normal;
+	}
+
+	h4 {
+		@apply text-2xl md:text-3xl lg:text-6xl xl:text-5xl leading-normal;
+	}
+
+	h5 {
+		@apply text-xl md:text-2xl lg:text-6xl xl:text-4xl leading-normal;
+	}
+
+	h6 {
+		@apply text-xl md:text-2xl lg:text-6xl xl:text-4xl leading-normal;
+	}
+
+	p {
+		@apply leading-relaxed;
+	}
+}
+
+@layer components {
+	input,
+	textarea,
+	.input {
+		@apply font-display pb-4 bg-transparent border-b border-primary outline-none;
+	}
+
+	.button {
+		@apply font-display lg:text-3xl flex items-center justify-center gap-4 py-4 px-12 bg-primary text-white;
+	}
+}
+
+@layer utilities {
+	.full-height {
+		height: 100vh;
+		max-height: calc(var(--vh, 1vh) * 100);
+	}
+}

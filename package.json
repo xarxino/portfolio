@@ -1,0 +1,35 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Custom portfolio theme",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "cross-env NODE_ENV=development webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zarzino/portfolio.git"
+  },
+  "keywords": [
+    "theme",
+    "wordpress",
+    "portfolio"
+  ],
+  "author": "Tom Graafmans",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.3",
+    "postcss": "^8.4.21",
+    "postcss-loader": "^7.0.2",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.2.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "formik": "^2.2.9"
+  }
+}
