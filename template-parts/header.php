@@ -17,7 +17,7 @@
 	<meta property="og:url" content="<?php bloginfo('url') ?>">
 	<meta property="og:title" content="<?php echo get_bloginfo('name') . ' - ' . get_bloginfo('description'); ?>">
 	<meta property="og:description" content="<?php echo $meta_desc; ?>">
-	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/src/img/meta_image.png">
+	<meta property="og:image" itemprop="image" content="<?php echo get_template_directory_uri(); ?>/src/img/meta_image.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
