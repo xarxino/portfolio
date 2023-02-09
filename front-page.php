@@ -15,9 +15,11 @@
             <?php while ($query->have_posts()) {
                 $query->the_post(); ?>
                 <div class="grid lg:grid-cols-2 lg:flex-row gap-4 md:gap-12 lg:gap-16">
-                    <?php the_post_thumbnail('', array('class' => 'w-full h-full h-[21.875rem] md:h-[25rem] lg:h-[32.8125rem] xl:h-[37.5rem] object-cover')); ?>
-                    <div class="flex flex-col gap-6 md:gap-8 lg:gap-12 xl:gap-16">
-                        <div class="flex flex-col gap-4 md:gap-6 lg:gap-8">
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_post_thumbnail('', array('class' => 'w-full h-[18.75rem] md:h-[25rem] lg:h-[31.25rem] xl:h-[37.5rem] object-cover transition-all hover:brightness-90')); ?>
+                    </a>
+                    <div class="flex flex-col gap-6 md:gap-8 lg:gap-12 xl:gap-16 items-start">
+                        <div class="flex flex-col items-start gap-4 md:gap-6 lg:gap-8">
                             <a href="<?php the_permalink(); ?>">
                                 <h2><?php the_title(); ?></h2>
                             </a>
@@ -34,9 +36,9 @@
 
                             <?php endif; ?>
                         </div>
-                        <a href="<?php the_permalink(); ?>" class="flex items-center gap-4 font-display border-b border-primary pb-2 lg:pb-4 self-start">
+                        <a href="<?php the_permalink(); ?>" class="button--underlined group">
                             Read this case
-                            <i class="ph-arrow-elbow-right lg:text-2xl"></i>
+                            <i class="ph-arrow-elbow-right lg:text-2xl transition-all group-hover:ml-1 group-hover:-rotate-12"></i>
                         </a>
                     </div>
                 </div>
@@ -44,8 +46,7 @@
         <?php wp_reset_postdata();
         } ?>
     </div>
-    <a href="<?php echo esc_url(home_url('/work')); ?>" class="button md:self-center">See more work</a>
+    <a href="<?php echo esc_url(home_url('/work')); ?>" class="button self-center w-full lg:w-auto">See more work</a>
 </main>
-
 
 <?php get_template_part('template-parts/footer', 'footer'); ?>

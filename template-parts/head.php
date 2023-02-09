@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
 
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3826994313091701" crossorigin="anonymous"></script>
+
     <!-- Primary Meta Tags -->
     <title><?php echo get_bloginfo('name') . ' - ' . get_bloginfo('description'); ?></title>
     <meta name="title" content="<?php echo get_bloginfo('name') . ' - ' . get_bloginfo('description'); ?>">

@@ -18,7 +18,7 @@
 					wp_nav_menu(array(
 						'theme_location' => 'header-menu',
 						'menu_class' => 'flex flex-col lg:flex-row items-center gap-8 md:gap-8 lg:gap-10 ',
-						'li_class'  => 'font-display uppercase tracking-wide text-2xl lg:hover:underline lg:hover:underline-offset-8'
+						'li_class'  => 'font-display uppercase tracking-wide text-2xl menu-item'
 					));
 					?>
 				</div>
@@ -26,18 +26,58 @@
 		</nav>
 
 		<?php if (is_front_page()) : ?>
-			<div class="flex flex-col gap-6 md:gap-12 lg:gap-16 md:items-start">
-				<h1 class="text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-[5.5rem] 2xl:max-w-4xl">Elevating your brand through design</h1>
-				<div class="flex flex-col lg:flex-row lg:justify-between gap-6 w-full">
-					<a href="<?php echo esc_url(home_url('/contact')); ?>" class="button">
-						<div>Let's collaborate</div>
-						<i class="ph-thumbs-up-light -rotate-12"></i>
-							</a>
-					<a href="#cases" class="flex items-center justify-center gap-4 opacity-50">
-						<div class="font-display uppercase text-xl">Case studies</div>
-						<i class="ph-arrow-bend-right-down"></i>
+			<div class="flex flex-col gap-12 md:gap-12 lg:gap-16 md:items-start">
+				<h1 class="text-4xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-[5.5rem] max-w-sm md:max-w-2xl lg:max-w-3xl xl:max-w-4xl">Elevating your brand through design</h1>
+				<div class="flex flex-col md:flex-row justify-between gap-4 w-full">
+					<div class="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12">
+						<a href="<?php echo esc_url(home_url('/contact')); ?>" class="button w-full">
+							<div class="whitespace-nowrap">Let's collaborate!</div>
+							<i class="ph-phone text-2xl"></i>
+						</a>
+
+						<a href="<?php echo get_theme_file_uri(); ?>/dist/downloads/resume.pdf" target="_blank" class="button bg-transparent text-primary border-none w-full px-0 py-0  border-b pb-2 border-transparent transition-all hover:border-primary">
+							<div class="whitespace-nowrap">Resume</div>
+							<i class="ph-download-simple text-2xl"></i>
+						</a>
+					</div>
+					<a href="#cases" class="text-lg lg:text-xl items-center self-center justify-center gap-4 opacity-50 hidden md:flex border-b pb-2 border-transparent transition-all hover:border-primary">
+						<div class="font-display uppercase whitespace-nowrap">Case studies</div>
+						<i class="ph-arrow-bend-right-down animate-bounce"></i>
 					</a>
 				</div>
+			</div>
+			<div class="absolute inset-0 -z-50 opacity-[3%]">
+				<svg width="100%" height="100%" viewBox="0 0 120% 120%" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle id="bgCircleOne" fill="url(#gradientOne)" />
+					<defs>
+						<linearGradient id="gradientOne" x1="1000" y1="0" x2="1000" y2="2000" gradientUnits="userSpaceOnUse">
+							<stop offset="0" stop-color="#000000" />
+							<stop offset="1" stop-color="#F1F1F1" stop-opacity="0" />
+						</linearGradient>
+					</defs>
+				</svg>
+			</div>
+			<div class="absolute inset-0 -z-50 opacity-[3%]">
+				<svg width="100%" height="100%" viewBox="0 0 120% 120%" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle id="bgCircleTwo" fill="url(#gradientTwo)" />
+					<defs>
+						<linearGradient id="gradientTwo" x1="1000" y1="0" x2="1000" y2="2000" gradientUnits="userSpaceOnUse">
+							<stop offset="0.2" stop-color="#111111" />
+							<stop offset="1" stop-color="#F1F1F1" stop-opacity="0" />
+						</linearGradient>
+					</defs>
+				</svg>
+			</div>
+			<div class="absolute inset-0 -z-50 opacity-[3%]">
+				<svg width="100%" height="100%" viewBox="0 0 120% 120%" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle id="bgCircleThree" fill="url(#gradientThree)" />
+					<defs>
+						<linearGradient id="gradientThree" x1="100%" y1="0" x2="100%" y2="2000" gradientUnits="userSpaceOnUse">
+							<stop offset="0.5" stop-color="#222222" />
+							<stop offset="1" stop-color="#F1F1F1" stop-opacity="0" />
+						</linearGradient>
+					</defs>
+				</svg>
 			</div>
 		<?php endif; ?>
 	</header>

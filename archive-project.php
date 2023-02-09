@@ -20,18 +20,14 @@ get_template_part('template-parts/header', 'header'); ?>
         if ($query->have_posts()) { ?>
             <?php while ($query->have_posts()) {
                 $query->the_post(); ?>
-                <div class="flex flex-col gap-6">
+                <div class="flex flex-col gap-6 group">
                     <a href="<?php the_permalink(); ?>">
-                        <?php the_post_thumbnail('', array('class' => 'w-full h-[18.75rem] md:h-[25rem] lg:h-[31.25rem] xl:h-[37.5rem] object-cover')); ?>
+                        <?php the_post_thumbnail('', array('class' => 'w-full h-[18.75rem] md:h-[25rem] lg:h-[31.25rem] xl:h-[37.5rem] object-cover transition-all hover:brightness-90')); ?>
                     </a>
-                    <div class="flex justify-between">
-                        <a href="<?php the_permalink(); ?>">
-                            <h2><?php the_title(); ?></h2></i>
+                    <a href="<?php the_permalink(); ?>" class="flex justify-between gap-4 md:gap-6 lg:gap-8 xl:gap-12">
+                            <h2><?php the_title(); ?></h2>
+                            <i class="ph-arrow-elbow-right text-3xl transition-all group-hover:ml-1 group-hover:-rotate-12"></i>
                         </a>
-                        <a href="<?php the_permalink(); ?>" class="flex items-center self-start">
-                            <i class="ph-arrow-elbow-right text-3xl"></i>
-                        </a>
-                    </div>
                 </div>
             <?php } ?>
         <?php wp_reset_postdata();
@@ -50,18 +46,14 @@ get_template_part('template-parts/header', 'header'); ?>
             <div class="grid lg:grid-cols-2 gap-12">
                 <?php while ($query->have_posts()) {
                     $query->the_post(); ?>
-                    <div class="flex flex-col gap-6">
+                    <div class="flex flex-col gap-6 group">
                         <a href="<?php the_permalink(); ?>">
-                            <?php the_post_thumbnail('', array('class' => 'w-full h-[18.75rem] md:h-[25rem] lg:h-[31.25rem] xl:h-[37.5rem] object-cover')); ?>
+                            <?php the_post_thumbnail('', array('class' => 'w-full h-[18.75rem] md:h-[25rem] lg:h-[31.25rem] xl:h-[37.5rem] object-cover transition-all group-hover:brightness-90')); ?>
                         </a>
-                        <div class="flex justify-between">
-                            <a href="<?php the_permalink(); ?>">
-                                <h2 class="lg:text-3xl"><?php the_title(); ?></h2></i>
-                            </a>
-                            <a href="<?php the_permalink(); ?>" class="flex items-center self-start">
-                                <i class="ph-arrow-elbow-right text-3xl"></i>
-                            </a>
-                        </div>
+                        <a href="<?php the_permalink(); ?>" class="flex justify-between gap-4 md:gap-6 lg:gap-8 xl:gap-12">
+                            <h2 class="lg:text-3xl"><?php the_title(); ?></h2>
+                            <i class="ph-arrow-elbow-right text-3xl transition-all group-hover:ml-1 group-hover:-rotate-12"></i>
+                        </a>
                     </div>
                 <?php } ?>
             </div>
