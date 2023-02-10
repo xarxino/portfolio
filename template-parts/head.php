@@ -1,7 +1,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 
-<?php $meta_desc = "Hey there! I'm a freelance UI designer ready to add some pizzazz to your digital world. I specialize in creating user-friendly and visually appealing designs that not only look good, but solve real problems for your users. Whether you need a website, app, or any other digital product, I've got you covered. Let's chat and see how I can bring your ideas to life and give your users the seamless experience they deserve." ?>
+<?php $meta_desc = "Hey there! I'm a web designer ready to add some pizzazz to your digital world. I specialize in creating user-friendly and visually appealing designs that not only look good, but solve real problems for your users. Whether you need a website, app, or any other digital product, I've got you covered. Let's chat and see how I can bring your ideas to life and give your users the seamless experience they deserve." ?>
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
