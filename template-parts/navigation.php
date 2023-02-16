@@ -1,4 +1,4 @@
-<nav class="flex items-center justify-between scroll-fade" data-delay="750ms">
+<nav class="flex items-center justify-between scroll-fade" data-delay="250ms">
     <a href="<?php echo esc_url(home_url('/')); ?>" rel="home" class="font-display tracking-[-0.375rem] font-black text-4xl lg:text-5xl leading-none uppercase">Tom</a>
     <div class="flex flex-col">
         <button id="menuOpen" class="flex lg:hidden items-center gap-4">
