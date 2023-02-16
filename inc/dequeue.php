@@ -36,3 +36,12 @@ add_action('wp_enqueue_scripts', 'remove_dashicons');
 
 
 add_filter('show_admin_bar', '__return_false');
+
+function disable_embeds_filter_oembed_response_data_($data)
+{
+    unset($data['author_url']);
+    unset($data['author_name']);
+    return $data;
+}
+
+add_filter('oembed_response_data', 'disable_embeds_filter_oembed_response_data_');
