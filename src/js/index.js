@@ -10,7 +10,8 @@ import '../css/main.css';
 import './modules/menu'
 
 // Import the modifyContent module
-import './modules/modifyContent'
+// Import the scrollFade module
+import "./modules/scrollFade";
 
 // Import the viewportHeight module
 import './modules/viewportHeight'
