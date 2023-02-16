@@ -4,14 +4,18 @@ initializes all necessary modules and dependencies.
 ***********************************************************************/
 
 // Import the main CSS file for the application
-import '../css/main.css';
+// This file is processed by webpack and the resulting CSS is injected into the page
+import "../css/main.css";
+
+// Import Feather Icons
+const feather = require("feather-icons");
+feather.replace({ "stroke-width": 1.25});
 
 // Import the menu module
-import './modules/menu'
+import "./modules/menu";
 
 // Import the modifyContent module
+import "./modules/modifyContent";
+
 // Import the scrollFade module
 import "./modules/scrollFade";
-
-// Import the viewportHeight module
-import './modules/viewportHeight'
