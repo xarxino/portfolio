@@ -1,5 +1,5 @@
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> class="scroll-smooth">
 
 <?php $meta_desc = "Hey there! I'm a web designer ready to add some pizzazz to your digital world. I specialize in creating user-friendly and visually appealing designs that not only look good, but solve real problems for your users. Whether you need a website, app, or any other digital product, I've got you covered. Let's chat and see how I can bring your ideas to life and give your users the seamless experience they deserve." ?>
 
@@ -7,9 +7,6 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3826994313091701" crossorigin="anonymous"></script>
 
     <!-- Primary Meta Tags -->
     <title><?php echo get_bloginfo('name') . ' - ' . get_bloginfo('description'); ?></title>
