@@ -110,4 +110,38 @@
 
 .menu-item:hover::after {
 	@apply w-full left-0;
+
+/* create fade in class with the fadein animation */
+.fadeIn {
+	animation-name: fadeIn;
+	animation-duration: 250ms;
+	animation-fill-mode: forwards;
+}
+
+/* create fade out class with the fadeout animation */
+.fadeOut {
+	animation-name: fadeOut;
+	animation-duration: 250ms;
+	animation-fill-mode: forwards;
+}
+
+/* create a fade in animation */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* create a fade out animation */
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
 }
