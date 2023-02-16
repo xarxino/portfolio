@@ -1,29 +1,6 @@
 <?php include('head.php') ?>
 
-<body <?php body_class('overflow-x-hidden') ?>>
-	<header id="#top" class="<?php if (is_front_page()) : echo "full-height pb-8 md:pb-12 lg:pb-16 xl:pb-24";
-								endif; ?>">
-		<nav class="flex items-center justify-between">
-			<a href="<?php echo esc_url(home_url('/')); ?>" rel="home" class="font-display tracking-[-0.375rem] font-black text-4xl lg:text-5xl leading-none uppercase">Tom</a>
-			<div class="flex flex-col">
-				<button id="menuOpen" class="flex lg:hidden items-center gap-4">
-					<div class="font-display font-medium text-base uppercase">Menu</div>
-					<i class="ph-list text-3xl"></i>
-				</button>
-				<div id="navMenu" class="hidden lg:flex bg-primary lg:bg-inherit text-white lg:text-inherit fixed z-50 lg:static inset-0 items-center justify-center">
-					<button id="menuClose" class="absolute top-6 right-4 p-4 lg:hidden tracking">
-						<i class="ph-x-fill"></i>
-					</button>
-					<?php
-					wp_nav_menu(array(
-						'theme_location' => 'header-menu',
-						'menu_class' => 'flex flex-col lg:flex-row items-center gap-8 md:gap-8 lg:gap-10 ',
-						'li_class'  => 'font-display uppercase tracking-wide text-2xl menu-item'
-					));
-					?>
-				</div>
-			</div>
-		</nav>
+		<?php include('navigation.php') ?>
 
 		<?php if (is_front_page()) : ?>
 			<div class="flex flex-col gap-12 md:gap-12 lg:gap-16 md:items-start">
