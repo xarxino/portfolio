@@ -101,6 +101,11 @@
 	}
 }
 
+/* calculate 100vh on mobile devices for header element*/
+.home header {
+	height: calc(var(--vh, 1vh) * 100);
+}
+
 /* create fade in class with the fadein animation */
 .fadeIn {
 	animation-name: fadeIn;
