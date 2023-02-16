@@ -9,7 +9,12 @@
                 <i data-feather="arrow-down" class="animate-bounce"></i>
             </a>
         </div>
-        <?php the_post_thumbnail('', array('class' => 'w-full h-[18.75rem] md:h-[25rem] lg:h-[31.25rem] xl:h-[37.5rem] object-cover')); ?>
+        <?php if (has_post_thumbnail()) {
+            $thumbnail_id = get_post_thumbnail_id();
+            $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'full')[0];
+            $thumbnail_alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+            echo '<img src="' . esc_url($thumbnail_url) . '" alt="' . esc_attr($thumbnail_alt) . '" class="w-full h-[18.75rem] md:h-[25rem] lg:h-[31.25rem] xl:h-[37.5rem] object-cover scroll-fade" data-delay="750">';
+        } ?>
         <div id="case" class="flex flex-col gap-8 md:flex-row justify-between">
             <div class="flex flex-col gap-4 md:gap-6 lg:gap-8">
                 <div class="font-display font-normal uppercase">Services</div>

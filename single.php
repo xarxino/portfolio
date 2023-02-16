@@ -6,7 +6,13 @@
             <h1><?php the_title(); ?></h1>
             <div class="font-display text-base lg:text-lg uppercase flex items-center gap-2"><?php reading_time(); ?></div>
         </div>
-        <?php the_post_thumbnail('', array('class' => 'w-full h-[18.75rem] md:h-[25rem] lg:h-[31.25rem] xl:h-[37.5rem] object-cover')); ?>
+        <?php
+        if (has_post_thumbnail()) {
+            $thumbnail_id = get_post_thumbnail_id();
+            $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'full')[0];
+            $thumbnail_alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+            echo '<img src="' . esc_url($thumbnail_url) . '" alt="' . esc_attr($thumbnail_alt) . '" class="w-full h-[18.75rem] md:h-[25rem] lg:h-[31.25rem] xl:h-[37.5rem] object-cover scroll-fade" data-delay="1000">';
+        } ?>
         <div class="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-12 xl:gap-16">
             <div class="relative w-full lg:min-w-[22rem]">
                 <?php get_template_part('template-parts/sidebar', 'sidebar') ?>
