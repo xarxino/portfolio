@@ -96,10 +96,8 @@
 }
 
 @layer utilities {
-	.full-height {
-		height: 100vh;
-		max-height: calc(var(--vh, 1vh) * 100);
-	}
+	.scroll-fade {
+		@apply opacity-0 !static;
 }
 
 .menu-item {
