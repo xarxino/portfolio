@@ -1,6 +1,8 @@
 const path = require("path");
 const { EnvironmentPlugin } = require("webpack");
 const isDev = process.env.NODE_ENV === "development";
+const PurgeCSSPlugin = require("purgecss-webpack-plugin");
+const glob = require('glob');
 
 module.exports = {
 	mode: isDev ? "development" : "production",
@@ -49,6 +51,11 @@ module.exports = {
 		],
 	},
 	plugins: [
+		new PurgeCSSPlugin({
+			paths: glob.sync(`${path.join(__dirname, "src")}/**/*`, {
+				nodir: true,
+			}),
+		}),
 		new EnvironmentPlugin({
 			WP_THEME_URL: process.env.WP_THEME_URL || "http://localhost",
 		}),
