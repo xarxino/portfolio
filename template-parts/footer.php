@@ -8,11 +8,11 @@
             <div class="flex flex-col gap-4">
                 <a href="<?php echo esc_url(home_url('/contact')); ?>" class="button bg-white text-primary hover:bg-transparent hover:border-white hover:text-white lg:self-center w-full">
                     <div class="whitespace-nowrap">Schedule a call</div>
-                    <i class="ph-phone text-2xl"></i>
+                    <i data-feather="phone-call"></i>
                 </a>
                 <a href="<?php echo get_theme_file_uri(); ?>/dist/downloads/resume.pdf" target="_blank" class="button--outlined border-white w-full">
                     <div class="whitespace-nowrap">Resume</div>
-                    <i class="ph-download-simple text-2xl"></i>
+                    <i data-feather="download"></i>
                 </a>
             </div>
         </div>
@@ -25,7 +25,7 @@
                 <div class="opacity-50">© <?php echo date('Y'); ?> &dash; Tom Graafmans</div>
                 <a href="#top" class="flex justify-center items-center self-start gap-4 pb-4 border-b border-white text-xl md:text-2xl group">
                     <div class="font-display">Back to top</div>
-                    <i class="ph-arrow-bend-right-up transition-all group-hover:ml-1 group-hover:-rotate-12"></i>
+                    <i data-feather="arrow-up"></i>
                 </a>
             </div>
         </div>

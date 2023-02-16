@@ -9,17 +9,16 @@
 					<div class="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12">
 						<a href="<?php echo esc_url(home_url('/contact')); ?>" class="button w-full">
 							<div class="whitespace-nowrap">Let's collaborate!</div>
-							<i class="ph-phone text-2xl"></i>
+							<i data-feather="phone-call"></i>
 						</a>
-
-						<a href="<?php echo get_theme_file_uri(); ?>/dist/downloads/resume.pdf" target="_blank" class="button bg-transparent text-primary border-none w-full px-0 py-0  border-b pb-2 border-transparent transition-all hover:border-primary">
+						<a href="<?php echo get_theme_file_uri(); ?>/src/downloads/resume.pdf" target="_blank" class="button">
 							<div class="whitespace-nowrap">Resume</div>
-							<i class="ph-download-simple text-2xl"></i>
+							<i data-feather="download"></i>
 						</a>
 					</div>
 					<a href="#cases" class="text-lg lg:text-xl items-center self-center justify-center gap-4 opacity-50 hidden md:flex border-b pb-2 border-transparent transition-all hover:border-primary">
 						<div class="font-display uppercase whitespace-nowrap">Case studies</div>
-						<i class="ph-arrow-bend-right-down animate-bounce"></i>
+						<i data-feather="arrow-down" class="animate-bounce"></i>
 					</a>
 				</div>
 			</div>

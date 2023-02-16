@@ -20,5 +20,5 @@
 	$readingTime = calculateReadingTime($words);
 
 	// Finally, we'll display the reading time on the page
-	echo '<i class="ph-clock-fill"></i>' . $readingTime . ' minutes';
+	echo '<i data-feather="clock"></i>' . $readingTime . ' minutes';
 }

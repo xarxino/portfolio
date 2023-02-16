@@ -24,9 +24,6 @@ get_template_part('template-parts/header', 'header'); ?>
                         <a href="<?php the_permalink(); ?>">
                             <h2><?php the_title(); ?></h2></i>
                         </a>
-                        <a href="<?php the_permalink(); ?>" class="flex items-center self-start">
-                            <i class="ph-arrow-elbow-right text-3xl"></i>
-                        </a>
                     </div>
                 </div>
             <?php } ?>
@@ -53,9 +50,6 @@ get_template_part('template-parts/header', 'header'); ?>
                         <div class="flex justify-between">
                             <a href="<?php the_permalink(); ?>">
                                 <h2 class="lg:text-3xl"><?php the_title(); ?></h2></i>
-                            </a>
-                            <a href="<?php the_permalink(); ?>" class="flex items-center self-start">
-                                <i class="ph-arrow-elbow-right text-3xl"></i>
                             </a>
                         </div>
                     </div>

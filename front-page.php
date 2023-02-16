@@ -38,7 +38,7 @@
                         </div>
                         <a href="<?php the_permalink(); ?>" class="button--underlined group">
                             Read this case
-                            <i class="ph-arrow-elbow-right lg:text-2xl transition-all group-hover:ml-1 group-hover:-rotate-12"></i>
+                            <i data-feather="arrow-up-right" class="transition-all group-hover:rotate-12"></i>
                         </a>
                     </div>
                 </div>

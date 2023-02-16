@@ -6,7 +6,7 @@
             <h1><?php the_title(); ?></h1>
             <a href="#case" class="hidden lg:flex items-center gap-4 opacity-50">
                 <div class="font-display uppercase text-xl">Read case</div>
-                <i class="ph-arrow-bend-right-down"></i>
+                <i data-feather="arrow-down" class="animate-bounce"></i>
             </a>
         </div>
         <?php the_post_thumbnail('', array('class' => 'w-full h-[18.75rem] md:h-[25rem] lg:h-[31.25rem] xl:h-[37.5rem] object-cover')); ?>
