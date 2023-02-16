@@ -64,15 +64,34 @@
 	}
 
 	.button {
-		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 px-12 border border-transparent transition bg-primary text-white hover:bg-transparent hover:border hover:border-primary hover:text-primary;
+		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 px-12 border border-transparent transition-all hover:border hover:border-primary hover:bg-transparent hover:text-primary;
 	}
 
-	.button--outlined {
-		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 px-12 border border-primary transition hover:border-transparent hover:bg-white hover:text-primary;
+	/* ********************************** Button filled ********************************** */
+	.button-filled {
+		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 px-12 bg-primary text-white border border-transparent transition-all hover:border hover:border-primary hover:bg-transparent hover:text-primary;
 	}
 
-	.button--underlined {
-		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 pb-2 lg:pb-4 border-b border-primary;
+	.button-filled--white {
+		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 px-12 bg-white text-primary border border-transparent transition-all hover:border hover:border-white hover:bg-transparent hover:text-white;
+	}
+
+	/* ********************************** Button outlined ********************************** */
+	.button-outlined {
+		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 px-12 border border-primary transition-all hover:bg-primary hover:text-white;
+	}
+
+	.button-outlined--white {
+		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 px-12 border border-white transition-all hover:bg-white hover:text-primary;
+	}
+
+	/* ********************************** Button underlined ********************************** */
+	.button-underlined {
+		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 border border-transparent border-b-primary transition-all;
+	}
+
+	.button-underlined--white {
+		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 border border-white transition-all;
 	}
 }
 

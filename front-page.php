@@ -36,7 +36,7 @@
 
                             <?php endif; ?>
                         </div>
-                        <a href="<?php the_permalink(); ?>" class="button--underlined group">
+                        <a href="<?php the_permalink(); ?>" class="button-outlined w-full group">
                             Read this case
                             <i data-feather="arrow-up-right" class="transition-all group-hover:rotate-12"></i>
                         </a>
@@ -46,7 +46,7 @@
         <?php wp_reset_postdata();
         } ?>
     </div>
-    <a href="<?php echo esc_url(home_url('/work')); ?>" class="button self-center w-full lg:w-auto">See more work</a>
+    <a href="<?php echo esc_url(home_url('/work')); ?>" class="button-filled self-center w-full lg:w-auto">See more work</a>
 </main>
 
 <?php get_template_part('template-parts/footer', 'footer'); ?>

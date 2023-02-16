@@ -7,7 +7,7 @@
 				<h1 class="text-4xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-[5.5rem] max-w-sm md:max-w-2xl lg:max-w-3xl xl:max-w-4xl">Elevating your brand through design</h1>
 				<div class="flex flex-col md:flex-row justify-between gap-4 w-full">
 					<div class="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12">
-						<a href="<?php echo esc_url(home_url('/contact')); ?>" class="button w-full">
+						<a href="<?php echo esc_url(home_url('/contact')); ?>" class="button-filled w-full">
 							<div class="whitespace-nowrap">Let's collaborate!</div>
 							<i data-feather="phone-call"></i>
 						</a>
