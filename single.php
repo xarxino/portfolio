@@ -2,7 +2,7 @@
 
 <main class="container max-w-7xl w-[90%] lg:w-[80%] 2xl:w-[70%] mx-auto flex flex-col justify-between">
     <div class="flex flex-col gap-4 md:gap-8 lg:gap-10">
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 scroll-fade" data-delay="750">
             <h1><?php the_title(); ?></h1>
             <div class="font-display text-base lg:text-lg uppercase flex items-center gap-2"><?php reading_time(); ?></div>
         </div>

@@ -8,7 +8,7 @@ get_template_part('template-parts/header', 'header'); ?>
 
 <main class="container max-w-7xl w-[90%] lg:w-[80%] 2xl:w-[70%] mx-auto flex flex-col justify-between">
     <div class="flex flex-col gap-8 md:gap-12 lg:gap-16 xl:gap-24">
-        <h1 class="max-w-4xl">Experience the results of creativity</h1>
+        <h1 class="max-w-4xl scroll-fade" data-delay="500">Experience the results of creativity</h1>
         <?php
         $args = array(
             'post_type' => 'project',
@@ -20,14 +20,13 @@ get_template_part('template-parts/header', 'header'); ?>
         if ($query->have_posts()) { ?>
             <?php while ($query->have_posts()) {
                 $query->the_post(); ?>
-                <div class="flex flex-col gap-6 group">
+                <div class="flex flex-col gap-6 group scroll-fade" data-delay="750">
                     <a href="<?php the_permalink(); ?>">
                         <?php the_post_thumbnail('', array('class' => 'w-full h-[18.75rem] md:h-[25rem] lg:h-[31.25rem] xl:h-[37.5rem] object-cover transition-all hover:brightness-90')); ?>
                     </a>
                     <a href="<?php the_permalink(); ?>" class="flex justify-between gap-4 md:gap-6 lg:gap-8 xl:gap-12">
-                            <h2><?php the_title(); ?></h2>
-                            <i class="ph-arrow-elbow-right text-3xl transition-all group-hover:ml-1 group-hover:-rotate-12"></i>
-                        </a>
+                        <h2><?php the_title(); ?></h2>
+                    </a>
                 </div>
             <?php } ?>
         <?php wp_reset_postdata();
@@ -52,7 +51,6 @@ get_template_part('template-parts/header', 'header'); ?>
                         </a>
                         <a href="<?php the_permalink(); ?>" class="flex justify-between gap-4 md:gap-6 lg:gap-8 xl:gap-12">
                             <h2 class="lg:text-3xl"><?php the_title(); ?></h2>
-                            <i class="ph-arrow-elbow-right text-3xl transition-all group-hover:ml-1 group-hover:-rotate-12"></i>
                         </a>
                     </div>
                 <?php } ?>

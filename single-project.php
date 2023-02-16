@@ -2,7 +2,7 @@
 
 <main class="container max-w-7xl w-[90%] lg:w-[80%] 2xl:w-[70%] mx-auto flex flex-col justify-between">
     <div class="flex flex-col gap-8 md:gap-12 lg:gap-16 xl:gap-24">
-        <div class="flex flex-col gap-4 md:gap-6 lg:gap-8 lg:flex-row lg:justify-between">
+        <div class="flex flex-col gap-4 md:gap-6 lg:gap-8 lg:flex-row lg:justify-between scroll-fade" data-delay="500">
             <h1><?php the_title(); ?></h1>
             <a href="#case" class="hidden lg:flex items-center gap-4 opacity-50">
                 <div class="font-display uppercase text-xl">Read case</div>
