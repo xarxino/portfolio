@@ -36,7 +36,7 @@
 
                             <?php endif; ?>
                         </div>
-                        <a href="<?php the_permalink(); ?>" class="button-outlined w-full group">
+                        <a href="<?php the_permalink(); ?>" class="button-outlined w-full lg:w-auto group">
                             Read this case
                             <i data-feather="arrow-up-right" class="transition-all group-hover:rotate-12"></i>
                         </a>
