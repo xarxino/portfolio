@@ -14,7 +14,7 @@
         if ($query->have_posts()) { ?>
             <?php while ($query->have_posts()) {
                 $query->the_post(); ?>
-                <div class="grid lg:grid-cols-2 lg:flex-row gap-4 md:gap-12 lg:gap-16">
+                <div class="grid lg:grid-cols-2 lg:flex-row gap-4 md:gap-12 lg:gap-16 scroll-fade">
                     <a href="<?php the_permalink(); ?>">
                         <?php the_post_thumbnail('', array('class' => 'w-full h-[18.75rem] md:h-[25rem] lg:h-[31.25rem] xl:h-[37.5rem] object-cover transition-all hover:brightness-90')); ?>
                     </a>

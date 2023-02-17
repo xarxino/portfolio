@@ -1,30 +1,22 @@
-import anime from "animejs/lib/anime.es.js";
-
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
 	const elements = document.querySelectorAll(".scroll-fade");
-	const observer = new IntersectionObserver(
-		(entries) => {
-			entries.forEach((entry) => {
-				if (entry.intersectionRatio > 0) {
-					const target = entry.target;
-					const delay = target.getAttribute("data-delay") || 200;
-					const scroll = target.getAttribute("data-scroll") || "10%";
-					const animeOptions = {
-						targets: target,
-						translateY: [100, 0],
-						opacity: [0, 1],
-						duration: 1000,
-						delay: delay,
-						easing: "easeInOutQuad",
-						scroll: scroll,
-					};
-					anime.timeline().add(animeOptions);
-					observer.unobserve(target);
-				}
-			});
-		},
-		{ threshold: [0, 1] }
-	);
+	const options = {
+		rootMargin: "100px 0px",
+		threshold: 0.5,
+	};
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				const target = entry.target;
+				const delay = target.getAttribute("data-delay") || 200;
+				const scroll = target.getAttribute("data-scroll") || "10%";
+				target.style.transition = `opacity 1s ease ${delay}ms, transform 1s ease ${delay}ms`;
+				target.style.opacity = 1;
+				target.style.transform = `translateY(-${scroll})`;
+				observer.unobserve(target);
+			}
+		});
+	}, options);
 	elements.forEach((element) => {
 		observer.observe(element);
 	});
