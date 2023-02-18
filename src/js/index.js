@@ -9,13 +9,10 @@ import "../css/main.css";
 
 // Import Feather Icons
 const feather = require("feather-icons");
-feather.replace({ "stroke-width": 1.25});
+feather.replace({ "stroke-width": 1.25 });
 
 // Import the menu module
 import "./modules/menu";
 
 // Import the modifyContent module
 import "./modules/modifyContent";
-
-// Import the scrollFade module
-import "./modules/scrollFade";

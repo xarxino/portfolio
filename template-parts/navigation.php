@@ -1,4 +1,4 @@
-<nav class="flex items-center justify-between scroll-fade">
+<nav class="flex items-center justify-between">
     <a href="<?php echo esc_url(home_url('/')); ?>" rel="home" class="font-display tracking-[-0.375rem] font-black text-4xl lg:text-5xl leading-none uppercase">Tom</a>
     <div class="flex flex-col">
         <button id="menuOpen" class="flex lg:hidden items-center gap-4">
@@ -18,6 +18,5 @@
             ));
             ?>
         </div>
-
     </div>
 </nav>

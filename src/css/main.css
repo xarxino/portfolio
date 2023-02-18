@@ -84,10 +84,6 @@
 }
 
 @layer utilities {
-	.scroll-fade {
-		@apply opacity-0 !static;
-	}
-
 	.menu-item {
 		@apply relative pb-2;
 	}
