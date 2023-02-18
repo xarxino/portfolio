@@ -15,7 +15,7 @@
 							<div class="whitespace-nowrap">Let's collaborate!</div>
 							<i data-feather="phone-call"></i>
 						</a>
-						<a href="<?php echo get_theme_file_uri(); ?>/src/downloads/resume.pdf" target="_blank" class="button">
+						<a href="<?php echo get_theme_file_uri(); ?>/src/downloads/resume_tomgraafmans.pdf" target="_blank" class="button">
 							<div class="whitespace-nowrap">Resume</div>
 							<i data-feather="download"></i>
 						</a>
