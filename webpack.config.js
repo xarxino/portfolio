@@ -6,9 +6,9 @@ const glob = require('glob');
 
 module.exports = {
 	mode: isDev ? "development" : "production",
-	entry: "./src/js/index.js",
+  entry: "./assets/src/js/index.js",
 	output: {
-		path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "assets/dist"),
 		filename: "bundle.js",
 	},
 	module: {
@@ -52,7 +52,7 @@ module.exports = {
 	},
 	plugins: [
 		new PurgeCSSPlugin({
-			paths: glob.sync(`${path.join(__dirname, "src")}/**/*`, {
+      paths: glob.sync(`${path.join(__dirname, "assets/src")}/**/*`, {
 				nodir: true,
 			}),
 		}),

@@ -18,20 +18,20 @@
     <meta property="og:url" content="<?php bloginfo('url') ?>">
     <meta property="og:title" content="<?php echo get_bloginfo('name') . ' - ' . get_bloginfo('description'); ?>">
     <meta property="og:description" content="<?php echo $meta_desc; ?>">
-    <meta property="og:image" itemprop="image" content="<?php echo get_template_directory_uri(); ?>/src/img/meta_image.png">
+    <meta property="og:image" itemprop="image" content="<?php echo get_template_directory_uri(); ?>/assets/src/img/meta_image.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="<?php bloginfo('url') ?>">
     <meta property="twitter:title" content="<?php echo get_bloginfo('name') . ' - ' . get_bloginfo('description'); ?>">
     <meta property="twitter:description" content="<?php echo $meta_desc; ?>">
-    <meta property="twitter:image" content="<?php echo get_template_directory_uri(); ?>/src/img/meta_image.png">
+    <meta property="twitter:image" content="<?php echo get_template_directory_uri(); ?>/assets/src/img/meta_image.png">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/src/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/src/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/src/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/src/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="<?php echo get_template_directory_uri(); ?>/src/img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/assets/src/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/assets/src/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/assets/src/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/assets/src/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="<?php echo get_template_directory_uri(); ?>/assets/src/img/favicon/apple-touch-icon.png">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 

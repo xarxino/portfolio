@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;500;700;900&family=Mada:wght@300;400;500;600;700;900&display=swap");
+@import url("bg-graphics.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply overflow-x-hidden relative z-10 font-body font-light text-xl lg:text-2xl text-primary bg-slate-50 flex flex-col gap-12 md:gap-16 lg:gap-24 xl:gap-32 after:bg-noise after:fixed after:inset-0 after:opacity-5 after:-z-10 dark:bg-dark-secondary dark:text-dark-primary dark:after:bg-noise-dark dark:after:opacity-[2%];
+	}
+
+	.apenkopf{
+		@apply bg-primary;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-display font-light leading-none tracking-tighter;
+	}
+
+	h1 {
+		@apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
+	}
+
+	h2 {
+		@apply text-3xl md:text-4xl lg:text-6xl xl:text-6xl;
+	}
+
+	h3 {
+		@apply text-2xl md:text-3xl lg:text-6xl xl:text-5xl leading-normal;
+	}
+
+	h4 {
+		@apply text-2xl md:text-3xl lg:text-6xl xl:text-5xl leading-normal;
+	}
+
+	h5 {
+		@apply text-xl md:text-2xl lg:text-6xl xl:text-4xl leading-normal;
+	}
+
+	h6 {
+		@apply text-xl md:text-2xl lg:text-6xl xl:text-4xl leading-normal;
+	}
+
+	p {
+		@apply leading-relaxed;
+	}
+}
+
+@layer components {
+	input,
+	textarea,
+	.input {
+		@apply font-display pb-4 bg-transparent border-b border-primary dark:border-dark-primary outline-none;
+	}
+
+	.button {
+		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 px-12 border border-transparent transition-all hover:border hover:border-primary hover:bg-transparent hover:text-primary dark:hover:border-dark-primary dark:hover:text-dark-primary;
+	}
+
+	/* ********************************** Button filled ********************************** */
+	.button-filled {
+		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 px-12 bg-primary text-slate-50 border border-transparent transition-all hover:border hover:border-primary hover:bg-transparent hover:text-primary dark:bg-dark-primary dark:text-dark-secondary dark:hover:border-dark-primary dark:hover:bg-transparent dark:hover:text-slate-50;
+	}
+
+	.button-filled--white {
+		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 px-12 bg-slate-50 text-primary border border-transparent transition-all hover:border hover:border-slate-50 hover:bg-transparent hover:text-slate-50 dark:hover:border-slate-50 dark:hover:bg-transparent dark:hover:text-primary;
+	}
+
+	/* ********************************** Button outlined ********************************** */
+	.button-outlined {
+		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 px-12 border border-primary transition-all hover:bg-primary hover:text-slate-50 dark:border-slate-50 dark:hover:border-transparent dark:hover:bg-slate-50 dark:hover:text-primary;
+	}
+
+	.button-outlined--white {
+		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 px-12 border border-slate-50 transition-all hover:bg-slate-50 hover:text-primary dark:hover:bg-primary dark:hover:text-slate-50;
+	}
+
+	/* ********************************** Button underlined ********************************** */
+	.button-underlined {
+		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 border border-transparent border-b-primary transition-all dark:border-b-slate-50;
+	}
+
+	.button-underlined--white {
+		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 border border-slate-50 transition-all dark:border-b-slate-50;
+	}
+}
+
+@layer utilities {
+	.menu-item {
+		@apply relative pb-2;
+	}
+
+	.menu-item::after {
+		@apply content-[""] absolute bottom-0 left-0 w-0 h-0.5 bg-primary dark:bg-slate-50 transition-all;
+	}
+
+	.menu-item:hover::after {
+		@apply w-full left-0;
+	}
+}
+
+/* Fade in animation keyframes */
+
+@keyframes fadeInAnimation {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Fade out animation keyframes */
+
+@keyframes fadeOutAnimation {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+/* Fade in animation */
+
+.fade-in {
+	animation: fadeInAnimation 0.25s ease;
+	animation-fill-mode: forwards;
+}
+
+/* Fade out animation */
+
+.fade-out {
+	animation: fadeOutAnimation 0.25s ease;
+}
