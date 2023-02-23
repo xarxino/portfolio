@@ -9,7 +9,6 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
 
     <!-- Primary Meta Tags -->
-    <title><?php echo get_bloginfo('name') . ' - ' . get_bloginfo('description'); ?></title>
     <meta name="title" content="<?php echo get_bloginfo('name') . ' - ' . get_bloginfo('description'); ?>">
     <meta name="description" content="<?php echo $meta_desc; ?>">
 
@@ -35,5 +34,8 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- WP Head -->
     <?php wp_head(); ?>
 </head>
+
+<body <?php body_class() ?>>
