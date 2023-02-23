@@ -5,19 +5,21 @@
             <div class="font-display font-medium text-base uppercase">Menu</div>
             <i data-feather="menu"></i>
         </button>
-        <div id="navMenu" class="hidden h-screen w-full z-[9999] fixed inset-0 bg-primary text-white items-center justify-center lg:h-auto lg:static lg:flex lg:bg-inherit lg:text-inherit transition-all">
+        <div id="navMenu" class="hidden h-screen w-full z-[9999] fixed inset-0 bg-primary text-slate-50 items-center justify-center lg:h-auto lg:static lg:flex lg:bg-inherit lg:text-inherit transition-all">
             <button id="menuClose" class="absolute top-6 right-4 p-4 lg:hidden">
                 <span class="sr-only">Close menu</span>
                 <i data-feather="x"></i>
             </button>
-            <?php
-            wp_nav_menu(array(
-                'theme_location' => 'header-menu',
-                'menu_class' => 'flex flex-col lg:flex-row items-center gap-8 md:gap-8 lg:gap-10 ',
-                'li_class'  => 'font-display uppercase tracking-wide text-2xl menu-item'
-            ));
-            ?>
+            <div class="flex gap-16">
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'header-menu',
+                    'menu_class' => 'flex flex-col lg:flex-row items-center gap-8 md:gap-8 lg:gap-10 ',
+                    'li_class'  => 'font-display uppercase tracking-wide text-2xl menu-item'
+                ));
+                ?>
                 <button class="dark-mode-toggle pb-2"></button>
+            </div>
         </div>
     </div>
 </nav>

@@ -1,4 +1,4 @@
-<div class="sticky top-16 left-0 p-8 bg-primary text-white flex flex-col gap-4">
+<div class="sticky top-16 left-0 p-8 bg-primary text-slate-50 flex flex-col gap-4">
   <h6 class="uppercase text-xl">Table of Contents</h6>
   <ul class="list-decimal flex flex-col gap-2">
     <?php
