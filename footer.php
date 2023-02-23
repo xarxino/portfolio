@@ -32,6 +32,9 @@
     </div>
 </footer>
 
+<?php get_template_part('template-parts/cookie-consent', 'cookie-consent') ?>
+
+
 <?php wp_footer(); ?>
 
 </body>

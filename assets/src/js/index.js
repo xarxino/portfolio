@@ -20,3 +20,5 @@ import "./modules/modifyContent";
 // Import darkMode module
 import "./modules/darkMode";
 
+// Import cookieConsent module
+import "./modules/cookieConsent";
