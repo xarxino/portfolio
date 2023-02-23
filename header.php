@@ -24,5 +24,24 @@
 				</a>
 			</div>
 		</div>
+		<svg width="100%" height="100%" viewBox="0 0 120% 120%" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute inset-0 -z-50">
+			<defs>
+				<linearGradient id="gradientOne" x1="1000" y1="0" x2="1000" y2="2000" gradientUnits="userSpaceOnUse">
+					<stop offset="0.1" stop-color="currentColor" />
+					<stop offset="1" stop-color="currentColor" stop-opacity="0" />
+				</linearGradient>
+				<linearGradient id="gradientTwo" x1="1000" y1="0" x2="1000" y2="2000" gradientUnits="userSpaceOnUse">
+					<stop offset="0.2" stop-color="currentColor" />
+					<stop offset="1" stop-color="currentColor" stop-opacity="0" />
+				</linearGradient>
+				<linearGradient id="gradientThree" x1="100%" y1="0" x2="100%" y2="2000" gradientUnits="userSpaceOnUse">
+					<stop offset="0.5" stop-color="currentColor" />
+					<stop offset="1" stop-color="currentColor" stop-opacity="0" />
+				</linearGradient>
+			</defs>
+			<circle class="opacity-[3%] dark:bg-gradient-to-t dark:from-white dark:opacity-[1%]" id="fillCircleOne" fill="url(#gradientOne)" />
+			<circle class="opacity-[3%] dark:bg-gradient-to-t dark:from-white dark:opacity-[1%]" id="bgCircleTwo" fill="url(#gradientTwo)" />
+			<circle class="opacity-[3%] dark:bg-gradient-to-t dark:from-white dark:opacity-[1%]" id="bgCircleThree" fill="url(#gradientThree)" />
+		</svg>
 	<?php endif; ?>
 </header>
