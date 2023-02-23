@@ -1,4 +1,15 @@
-<?php get_template_part('template-parts/header', 'header'); ?>
+<?php
+
+/**
+ * The template for displaying a single post.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Portfolio
+ */
+
+
+get_header(); ?>
 
 <main class="container max-w-7xl w-[90%] lg:w-[80%] 2xl:w-[70%] mx-auto flex flex-col justify-between">
     <div class="flex flex-col gap-4 md:gap-8 lg:gap-10">

@@ -1,6 +1,14 @@
 <?php
 
-get_template_part('template-parts/header', 'header'); ?>
+/**
+ * The template for displaying archive pages
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Portfolio
+ */
+
+get_header(); ?>
 
 <main class="container max-w-7xl w-[90%] lg:w-[80%] 2xl:w-[70%] mx-auto flex flex-col justify-between">
     <div class="flex flex-col gap-8 md:gap-12 lg:gap-16 xl:gap-24">

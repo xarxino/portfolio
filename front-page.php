@@ -1,4 +1,12 @@
-<?php get_template_part('template-parts/header', 'header'); ?>
+<?php
+
+/**
+ * The template for displaying the front page.
+ *
+ * @package Portfolio
+ */
+
+get_header(); ?>
 
 <main id="cases" class="container w-7xl w-[90%] lg:w-[80%] 2xl:w-[70%] mx-auto flex flex-col justify-between gap-8 md:gap-12 lg:gap-16 xl:gap-24">
     <div class="flex flex-col gap-10 md:gap-16 lg:gap-24 xl:gap-32">
