@@ -32,8 +32,7 @@ get_header(); ?>
                 <?php echo get_the_content('', array('class' => 'post-content flex flex-col')); ?>
             </div>
         </div>
-
     </div>
 </main>
 
-<?php get_template_part('template-parts/footer', 'footer'); ?>
+<?php get_footer(); ?>

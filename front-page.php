@@ -57,4 +57,4 @@ get_header(); ?>
     <a href="<?php echo esc_url(home_url('/work')); ?>" class="button-filled self-center w-full lg:w-auto">See more work</a>
 </main>
 
-<?php get_template_part('template-parts/footer', 'footer'); ?>
+<?php get_footer(); ?>
