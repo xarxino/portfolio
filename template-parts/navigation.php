@@ -17,6 +17,7 @@
                 'li_class'  => 'font-display uppercase tracking-wide text-2xl menu-item'
             ));
             ?>
+                <button class="dark-mode-toggle pb-2"></button>
         </div>
     </div>
 </nav>

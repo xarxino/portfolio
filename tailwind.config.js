@@ -9,12 +9,15 @@ module.exports = {
         'body': ["Mada", "sans-serif"],
       },
       colors: {
-        'primary': '#27332F',
+				dark: {
+					primary: "#CCD8D4", // Primary color
+					secondary: "#121212", // Background color
+				},
       },
       backgroundImage: {
-        'noise': "url('/src/img/bg-noise.png')",
-      }
+				"noise-dark": "url('/assets/src/img/bg-noise-dark.png')",
     },
+			darkMode: "class",
   },
   plugins: [],
 }
