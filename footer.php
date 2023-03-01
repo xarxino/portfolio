@@ -10,7 +10,7 @@
                     <div class="whitespace-nowrap">Schedule a call</div>
                     <i data-feather="phone-call"></i>
                 </a>
-                <a href="<?php echo get_theme_file_uri(); ?>/src/downloads/resume_tomgraafmans.pdf" target="_blank" class="button-outlined--white w-full">
+                <a href="<?php echo get_theme_file_uri(); ?>/src/downloads/resume_tomgraafmans.pdf" target="_blank" class="button-outlined--white w-full dark:border-dark-secondary">
                     <div class="whitespace-nowrap">Resume</div>
                     <i data-feather="download"></i>
                 </a>
@@ -18,8 +18,8 @@
         </div>
         <div class="flex flex-col gap-6 md:gap-12 lg:gap-16 xl:gap-24">
             <div class="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16">
-                <a target="_blank" href="https://dribbble.com/varvino" class="font-display font text-2xl lg:text-3xl xl:text-4xl border-b-2 border-transparent transition-all pb-2 hover:border-slate-50">Dribbble</a>
-                <a target="_blank" href="https://www.linkedin.com/in/tomgraafmans/" class="font-display font text-2xl lg:text-3xl xl:text-4xl border-b-2 border-transparent transition-all pb-2 hover:border-slate-50">LinkedIn</a>
+                <a target="_blank" href="https://dribbble.com/varvino" class="font-display font text-2xl lg:text-3xl xl:text-4xl border-b-2 border-transparent transition-all pb-2 hover:border-slate-50 dark:hover:border-dark-secondary">Dribbble</a>
+                <a target="_blank" href="https://www.linkedin.com/in/tomgraafmans/" class="font-display font text-2xl lg:text-3xl xl:text-4xl border-b-2 border-transparent transition-all pb-2 hover:border-slate-50 dark:hover:border-dark-secondary">LinkedIn</a>
             </div>
             <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-8">
                 <div class="opacity-50">© <?php echo date('Y'); ?> &mdash; Tom Graafmans</div>

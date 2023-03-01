@@ -69,25 +69,25 @@
 	}
 
 	.button-filled--white {
-		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 px-12 bg-slate-50 text-primary border border-transparent transition-all hover:border hover:border-slate-50 hover:bg-transparent hover:text-slate-50 dark:hover:border-slate-50 dark:hover:bg-transparent dark:hover:text-primary;
+    @apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 px-12 bg-slate-50 text-primary border border-transparent transition-all hover:border hover:border-slate-50 hover:bg-transparent hover:text-slate-50 dark:bg-dark-secondary dark:text-dark-primary dark:hover:border-dark-secondary dark:hover:bg-transparent dark:hover:text-primary;
 	}
 
 	/* ********************************** Button outlined ********************************** */
 	.button-outlined {
-		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 px-12 border border-primary transition-all hover:bg-primary hover:text-slate-50 dark:border-slate-50 dark:hover:border-transparent dark:hover:bg-slate-50 dark:hover:text-primary;
+    @apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 px-12 border border-primary transition-all hover:bg-primary hover:text-slate-50 dark:border-slate-50 dark:hover:border-transparent dark:hover:bg-dark-primary dark:hover:text-primary;
 	}
 
 	.button-outlined--white {
-		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 px-12 border border-slate-50 transition-all hover:bg-slate-50 hover:text-primary dark:hover:bg-primary dark:hover:text-slate-50;
+    @apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 px-12 border border-slate-50 transition-all hover:bg-slate-50 hover:text-primary dark:hover:bg-dark-secondary dark:hover:text-dark-primary dark:border-dark-primary;
 	}
 
 	/* ********************************** Button underlined ********************************** */
 	.button-underlined {
-		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 border border-transparent border-b-primary transition-all dark:border-b-slate-50;
+    @apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 border border-transparent border-b-primary transition-all dark:border-b-dark-primary;
 	}
 
 	.button-underlined--white {
-		@apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 border border-slate-50 transition-all dark:border-b-slate-50;
+    @apply font-display text-xl lg:text-2xl flex items-center justify-center gap-4 py-4 border border-slate-50 transition-all dark:border-b-dark-primary;
 	}
 }
 
@@ -97,7 +97,7 @@
 	}
 
 	.menu-item::after {
-		@apply content-[""] absolute bottom-0 left-0 w-0 h-0.5 bg-primary dark:bg-slate-50 transition-all;
+    @apply content-[""] absolute bottom-0 left-0 w-0 h-0.5 bg-primary dark:bg-dark-primary transition-all;
 	}
 
 	.menu-item:hover::after {
