@@ -6,7 +6,6 @@
 
 function portfolio_scripts()
 {
-	wp_enqueue_style('portfolio-style', get_stylesheet_directory_uri(), array(), _S_VERSION, 'all');
 	wp_enqueue_script('portfolio-bundle', get_stylesheet_directory_uri() . '/assets/dist/bundle.js', array(), false, true);
 }
 
