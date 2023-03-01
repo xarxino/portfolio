@@ -1,6 +1,4 @@
 const cookieConsent = document.querySelector(".cookie-consent");
-const btnLearnMore = document.querySelector(".button-learn-more");
-
 const COOKIE_CONSENT_KEY = "cookie_consent_accepted";
 
 // Check if user already accepted cookie consent
@@ -39,11 +37,6 @@ const closeCookieConsent = () => {
 		cookieConsent.classList.add("hidden");
 	}, 500);
 };
-
-// Learn more button
-btnLearnMore.addEventListener("click", () => {
-	window.location.href = "/cookies-policy";
-});
 
 // Show cookie consent popup if not already accepted
 if (!isCookieConsentAccepted()) {
