@@ -39,9 +39,9 @@
 					<stop offset="1" stop-color="currentColor" stop-opacity="0" />
 				</linearGradient>
 			</defs>
-			<circle class="opacity-[3%] dark:bg-gradient-to-t dark:from-white dark:opacity-[1%]" id="fillCircleOne" fill="url(#gradientOne)" />
-			<circle class="opacity-[3%] dark:bg-gradient-to-t dark:from-white dark:opacity-[1%]" id="bgCircleTwo" fill="url(#gradientTwo)" />
-			<circle class="opacity-[3%] dark:bg-gradient-to-t dark:from-white dark:opacity-[1%]" id="bgCircleThree" fill="url(#gradientThree)" />
+			<circle class="opacity-[3%] dark:bg-gradient-to-t dark:from-white dark:opacity-[3%]" id="fillCircleOne" fill="url(#gradientOne)" />
+			<circle class="opacity-[3%] dark:bg-gradient-to-t dark:from-white dark:opacity-[3%]" id="bgCircleTwo" fill="url(#gradientTwo)" />
+			<circle class="opacity-[3%] dark:bg-gradient-to-t dark:from-white dark:opacity-[3%]" id="bgCircleThree" fill="url(#gradientThree)" />
 		</svg>
 	<?php endif; ?>
 </header>
